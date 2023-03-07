@@ -1,0 +1,118 @@
+.top {
+  margin: 15px;
+}
+
+.top span select {
+  border-style: none;
+  font-weight: bold;
+  margin-left: 80px;
+  margin-top: 7px;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.searchbar input {
+  border-radius: 30px;
+  border: none;
+  background-color: #E9E9E9;
+  width: 95%;
+  height: 40px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  right: 25px;
+  top: 15px;
+}
+.theme-switch-wrapper span {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.toggle-text {
+  position: relative;
+  top: -4px;
+  right: 5px;
+  color: var(--on-background);
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+.theme-switch .theme-switch input {
+  display: none;
+}
+
+.slider {
+  background: rgb(204, 204, 204);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background: #047cfc;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background: var(--primary-color);
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.fas {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.displaysearcheditems {
+  margin-top: 10px;
+}
+.displaysearcheditems h1 {
+  display: inline;
+  margin-left: 12px;
+}
+.displaysearcheditems span {
+  margin-left: 195px;
+}
+
+.noun {
+  list-style: none;
+}
+.noun ul {
+  margin-right: 100px;
+  background-color: #047cfc;
+}/*# sourceMappingURL=style.css.map */
