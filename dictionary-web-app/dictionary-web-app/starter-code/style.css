@@ -1,3 +1,24 @@
+:root {
+  --primary-color: rgb(255, 92, 92);
+  --fontfamily: sans-serif;
+}
+
+[data-themeone=serif] {
+  --fontfamily:serif;
+}
+
+[data-themetwo=Mono] {
+  --fontfamily:Mono;
+}
+
+[data-themethree=sans-serif] {
+  --fontfamily:sans-serif;
+}
+
+body {
+  font-family: var(--fontfamily);
+}
+
 .top {
   margin: 15px;
 }
@@ -7,22 +28,6 @@
   font-weight: bold;
   margin-left: 80px;
   margin-top: 7px;
-}
-
-.searchbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-.searchbar input {
-  border-radius: 30px;
-  border: none;
-  background-color: #E9E9E9;
-  width: 95%;
-  height: 40px;
-  font-size: larger;
-  font-weight: bold;
 }
 
 .theme-switch-wrapper {
@@ -98,21 +103,62 @@ input:checked + .slider::before {
   margin-right: 5px;
 }
 
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 30px;
+  background-color: #E9E9E9;
+}
+.searchbar input {
+  border: none;
+  outline: none;
+  background-color: #E9E9E9;
+  width: 85%;
+  height: 40px;
+  font-size: larger;
+  font-weight: bold;
+}
+
 .displaysearcheditems {
   margin-top: 10px;
 }
 .displaysearcheditems h1 {
   display: inline;
-  margin-left: 12px;
+  margin-left: 4%;
 }
 .displaysearcheditems span {
-  margin-left: 195px;
+  margin-left: 90%;
+  margin-bottom: 50px;
 }
 
-.noun {
-  list-style: none;
+section ul {
+  margin-right: 20%;
+  font-size: smaller;
 }
-.noun ul {
-  margin-right: 100px;
-  background-color: #047cfc;
+section h2 {
+  font-size: medium;
+}
+section h4 {
+  font-size: small;
+  font-weight: lighter;
+  color: rgba(128, 128, 128, 0.922);
+}
+
+.synonyms {
+  color: #A445ED;
+}
+
+p {
+  font-weight: 200;
+  color: grey;
+}
+p span {
+  font-size: small;
+  color: black;
+}
+
+.phonetics h3 {
+  color: #A445ED;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,22 @@
+$purplecolor:#A445ED;
+:root {
+    --primary-color: rgb(255, 92, 92);
+    --fontfamily: sans-serif;
+  }
+  
+  [data-themeone="serif"] {
+    --fontfamily:serif;
+  }
+
+  [data-themetwo="Mono"] {
+    --fontfamily:Mono;
+  }
+  [data-themethree="sans-serif"] {
+    --fontfamily:sans-serif;
+  }
+body{
+    font-family: var(--fontfamily);
+}
 .top{
     margin: 15px;
 }
@@ -8,26 +27,9 @@
     margin-top: 7px;
     
 }
-.searchbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-
-    input {
-        border-radius: 30px;
-        border: none;
-        background-color: #E9E9E9;
-        width: 95%;
-        height: 40px;
-        font-size: larger;
-        font-weight: bold;
-      
-    }
-    
-}
 
 
+//////mode////////////
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -103,33 +105,82 @@
     font-size: 20px;
     margin-right: 5px;
   }
+/////////////////////////////
 
+  .searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+      border-radius: 30px;
+    background-color: #E9E9E9;
+
+    input {
+        border: none;
+        outline: none;
+        background-color: #E9E9E9;
+        width: 85%;
+        height: 40px;
+        font-size: larger;
+        font-weight: bold;
+      
+    }
+    
+}
 
 
 .displaysearcheditems {
     margin-top: 10px;
     h1{
     display: inline;
-    margin-left: 12px;
+    margin-left: 4%;
    
 }
+
 span{
-    margin-left: 195px;
+    margin-left: 90%;
+    margin-bottom: 50px;
+    // background-color: #047cfc;
+   
 }
 }
 
-.noun{
+section{
+   
     ul {
-        margin-right: 100px;
-        background-color: #047cfc;
+        margin-right: 20%;
+        font-size: smaller;
+       
+        }
+
+    h2{
+        font-size: medium;
     }
-    list-style:none;
+        
+    h4{
+        font-size: small;
+        font-weight: lighter;
+        color: rgba(128, 128, 128, 0.922);
+    }    
+  
+}
+.synonyms{
+    color: $purplecolor;
+   // background-color: $purplecolor;
+}
+p{
+    font-weight:200;
+    color: grey;
+
+    span{
+        font-size: small;
+        color:black;
+       
+    }
 }
 
-// .noun h2{
-// display: inline-block;
-// }
-
-// .noun hr{
-//     display: inline;
-//     }
+.phonetics{
+    h3{
+        color: $purplecolor;
+    }
+}
