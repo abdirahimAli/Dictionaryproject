@@ -1,22 +1,30 @@
 :root {
-  --primary-color: rgb(255, 92, 92);
-  --fontfamily: sans-serif;
+  --primary-background_color: #FFFFFF;
+  --primary-fonts_color: #050505;
+  --fontfamily:sans-serif;
 }
 
-[data-themeone=serif] {
+[switch-fonts=serif] {
   --fontfamily:serif;
 }
 
-[data-themetwo=Mono] {
-  --fontfamily:Mono;
+[switch-fonts=Mono] {
+  --fontfamily:Monospace;
 }
 
-[data-themethree=sans-serif] {
+[switch-fonts=sans-serif] {
   --fontfamily:sans-serif;
+}
+
+[mode-dark=dark] {
+  --primary-color_background: #050505;
+  --primary-fonts_color: #FFFFFF;
 }
 
 body {
   font-family: var(--fontfamily);
+  background-color: var(--primary-color_background);
+  color: var(--primary-fonts_color);
 }
 
 .top {
@@ -161,4 +169,10 @@ p span {
 
 .phonetics h3 {
   color: #A445ED;
+}
+
+select {
+  outline: none;
+  background-color: black;
+  color: var(--primary-fonts_color);
 }/*# sourceMappingURL=style.css.map */

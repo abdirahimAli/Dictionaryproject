@@ -12,7 +12,7 @@ let apitranslation = [];
 const phonetics = document.getElementById('phonetics');
 
 
-//toggleSwitch.addEventListener('change', switchTheme);
+toggleSwitch.addEventListener('change', switchTheme);
 //font.addEventListener('change', switchfont);
 
 searched_word.addEventListener('change',main);
@@ -27,7 +27,6 @@ dis_searched_item.textContent = searched_word.value;
 let word = searched_word.value;
 
 gettranslation(word);
-//fontstyle();
 
 }
 
@@ -88,26 +87,32 @@ function add_verb(){
 function sourcelink(){
     source_link.textContent= apitranslation[0].sourceUrls[0]
 }
-// console.log(apitranslation[0]);
-
-//   keyboard
-
-//apitranslation[0].sourceUrls[0]
 
 function fontstyle(){
     if(select[0].value==='serif'){
         synonyms.textContent = 'cool';
-        document.documentElement.setAttribute('data-themeone', 'serif');
+        document.documentElement.setAttribute('switch-fonts', 'serif');
     }
     if(select[0].value==='Mono'){
         synonyms.textContent = 'Mono';
-        document.documentElement.setAttribute('data-themetwo', 'Mono');
+        document.documentElement.setAttribute('switch-fonts', 'Mono');
     }
 
     if(select[0].value==='Sans serif'){
         synonyms.textContent = 'yes';
-        document.documentElement.setAttribute('data-themethree', 'sans-serif');
+        document.documentElement.setAttribute('switch-fonts', 'sans-serif');
     }
     console.log(select[0].value);
    // main();
 }
+
+//keyboard
+function switchTheme(event) {
+    if (event.target.checked) {
+      document.documentElement.setAttribute('mode-dark', 'dark');
+     
+    } else {
+      document.documentElement.setAttribute('mode-dark', 'light');
+     
+    }
+  }
