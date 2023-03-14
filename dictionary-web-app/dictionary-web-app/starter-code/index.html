@@ -26,8 +26,9 @@
 <!-- mode -->
   <span class="mode"><div class="theme-switch-wrapper">
     <span id="toggle-icon">
-        <span class="toggle-text">|</span>
-        <i class="fas fa-sun"></i>
+        <span class="toggle-text">
+        </span>
+        <i class="fas fa-moon"></i>
     </span>
     <label class="theme-switch">
         <input type="checkbox">
@@ -38,22 +39,22 @@
 <!-- searchbar -->
   <div class="searchbar">
     <input type="text" id="searchbar" >
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i id="fa-magnifying-glass" class="fa-solid fa-magnifying-glass"></i>
   </div>
 <!--  display searched items-->
   <div class="displaysearcheditems">
 
 <h1 id="displaysearcheditems"></h1>
 
-<span><i class="fa-solid fa-play"></i></span>
+<span class="play-background"><i style="display: none;" id="fa-play" class="fa-solid fa-play"></i></span>
 
 <div class="phonetics">
   <h3 id="phonetics"></h3> </div>
 </div>
 
 <!-- noun section-->
-<section class="noun">
-<h2>noun</h2> <hr>
+<section style="display: none;" class="noun show" id="show">
+<h2>noun</h2> 
 
 <h4>Meaning</h4>
 
@@ -62,24 +63,24 @@
  
   </ul>
 
-  <h4>synonyms <span id="synonyms" class="synonyms"></span></h4> 
+  <h4 id="von">synonyms <span id="synonyms" class="synonyms"></span></h4> 
 </section>
 
 <!-- verb section-->
-<section class="verb">
-  <h2>verb</h2> <hr>
+<section style="display: none;" class="verb show" id="show1">
+  <h2>verb</h2> 
   <h4>Meaning</h4>
  
     <ul id="verb-list">
      
     </ul>
 </section>
-<hr>
+
 
 <!-- sourcelink -->
 
 <div>
-  <p class="source">source: <span class="sourcelink" id="sourcelink"></span></p> 
+  <p id="sourcelink_p" style="display: none;"  class="source show">source: <span class="sourcelink" id="sourcelink"></span></p> 
   
 </div>
 

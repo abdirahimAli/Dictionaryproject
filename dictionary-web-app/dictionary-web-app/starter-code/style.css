@@ -2,6 +2,11 @@
   --primary-background_color: #FFFFFF;
   --primary-fonts_color: #050505;
   --fontfamily:sans-serif;
+  --searchbar_color: rgba(255, 255, 0, 0.96);
+}
+
+[switch-searchbarcolor=dark] {
+  --searchbar_color: #2d2d2d;
 }
 
 [switch-fonts=serif] {
@@ -28,23 +33,21 @@ body {
 }
 
 .top {
-  margin: 15px;
+  margin-top: 5%;
 }
 
 .top span select {
   border-style: none;
   font-weight: bold;
-  margin-left: 80px;
+  margin-left: 50px;
   margin-top: 7px;
 }
 
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-  z-index: 100;
-  position: fixed;
-  right: 25px;
-  top: 15px;
+  margin-left: 70%;
+  margin-top: -25px;
 }
 .theme-switch-wrapper span {
   margin-right: 10px;
@@ -60,9 +63,9 @@ body {
 
 .theme-switch {
   display: inline-block;
-  height: 34px;
+  height: 20px;
   position: relative;
-  width: 60px;
+  width: 45px;
 }
 .theme-switch .theme-switch input {
   display: none;
@@ -80,18 +83,18 @@ body {
 }
 
 .slider::before {
-  background: #047cfc;
+  background: #FFFFFF;
   bottom: 4px;
   content: "";
-  height: 26px;
+  height: 15px;
   left: 4px;
   position: absolute;
   transition: 0.4s;
-  width: 26px;
+  width: 15px;
 }
 
 input:checked + .slider {
-  background: var(--primary-color);
+  background: #A445ED;
 }
 
 input:checked + .slider::before {
@@ -111,18 +114,23 @@ input:checked + .slider::before {
   margin-right: 5px;
 }
 
+.fa-magnifying-glass, .fa-play {
+  color: #57118d;
+}
+
 .searchbar {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
   border-radius: 30px;
-  background-color: #E9E9E9;
+  background-color: var(--searchbar_color);
 }
 .searchbar input {
   border: none;
   outline: none;
-  background-color: #E9E9E9;
+  background-color: var(--searchbar_color);
+  color: var(--primary-fonts_color);
   width: 85%;
   height: 40px;
   font-size: larger;
@@ -136,9 +144,13 @@ input:checked + .slider::before {
   display: inline;
   margin-left: 4%;
 }
+.displaysearcheditems .fa-play {
+  margin-left: 90%;
+}
 .displaysearcheditems span {
   margin-left: 90%;
   margin-bottom: 50px;
+  background-color: #57118d;
 }
 
 section ul {
@@ -166,6 +178,9 @@ p span {
   font-size: small;
   color: black;
 }
+p span .fa-play {
+  margin-left: 90%;
+}
 
 .phonetics h3 {
   color: #A445ED;
@@ -173,6 +188,10 @@ p span {
 
 select {
   outline: none;
-  background-color: black;
+  background-color: var(--primary-color_background);
+  color: var(--primary-fonts_color);
+}
+
+.sourcelink {
   color: var(--primary-fonts_color);
 }/*# sourceMappingURL=style.css.map */
