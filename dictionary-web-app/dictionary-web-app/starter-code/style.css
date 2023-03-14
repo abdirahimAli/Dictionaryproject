@@ -2,7 +2,7 @@
   --primary-background_color: #FFFFFF;
   --primary-fonts_color: #050505;
   --fontfamily:sans-serif;
-  --searchbar_color: rgba(255, 255, 0, 0.96);
+  --searchbar_color: #a5a6b7;
 }
 
 [switch-searchbarcolor=dark] {
@@ -35,18 +35,21 @@ body {
 .top {
   margin-top: 5%;
 }
+.top .fa-book {
+  margin: 5px;
+}
 
 .top span select {
   border-style: none;
   font-weight: bold;
-  margin-left: 50px;
-  margin-top: 7px;
+  margin-left: 130px;
+  margin-top: 17px;
 }
 
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-  margin-left: 70%;
+  margin-left: 260px;
   margin-top: -25px;
 }
 .theme-switch-wrapper span {
@@ -109,11 +112,6 @@ input:checked + .slider::before {
   border-radius: 50%;
 }
 
-.fas {
-  font-size: 20px;
-  margin-right: 5px;
-}
-
 .fa-magnifying-glass, .fa-play {
   color: #57118d;
 }
@@ -125,13 +123,14 @@ input:checked + .slider::before {
   margin-top: 30px;
   border-radius: 30px;
   background-color: var(--searchbar_color);
+  width: 400px;
 }
 .searchbar input {
   border: none;
   outline: none;
   background-color: var(--searchbar_color);
   color: var(--primary-fonts_color);
-  width: 85%;
+  width: 340px;
   height: 40px;
   font-size: larger;
   font-weight: bold;
@@ -145,7 +144,7 @@ input:checked + .slider::before {
   margin-left: 4%;
 }
 .displaysearcheditems .fa-play {
-  margin-left: 90%;
+  margin-left: 360px;
 }
 .displaysearcheditems span {
   margin-left: 90%;
@@ -194,4 +193,18 @@ select {
 
 .sourcelink {
   color: var(--primary-fonts_color);
+}
+
+.fa-moon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    font-size: larger;
+  }
+  .container {
+    margin-left: 500px;
+  }
 }/*# sourceMappingURL=style.css.map */

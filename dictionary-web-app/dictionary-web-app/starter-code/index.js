@@ -15,7 +15,7 @@ const sections1 = document.getElementById('show1')
 const sourcelink_p = document.getElementById('sourcelink_p')
 const playsound = document.getElementById('fa-play')
 const synonym_text = document.getElementById('synonym-text');
-
+const magnifying_glass = document.getElementById('fa-magnifying-glass');
 
 
 // VARRIBLES //
@@ -35,7 +35,7 @@ function main(){
 dis_searched_item.textContent = searched_word.value;
 let word = searched_word.value;
 
-gettranslation(word);
+gettranslation(word); //******** *//
 
 }
 
@@ -196,6 +196,8 @@ function reset(){
 }     
 
 /// Event listener  ///
+magnifying_glass.addEventListener('click',()=>{
+    main();  }) 
 searched_word.addEventListener('change',()=>{
     main();  })
 toggleSwitch.addEventListener('change', switchTheme);

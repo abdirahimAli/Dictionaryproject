@@ -3,7 +3,7 @@ $purplecolor:#A445ED;
     --primary-background_color: #FFFFFF;
     --primary-fonts_color: #050505;
     --fontfamily:sans-serif;
-    --searchbar_color: rgba(255, 255, 0, 0.96);
+    --searchbar_color: #a5a6b7;
     //rgba(128, 128, 128, 0.922);
 
   }
@@ -34,13 +34,15 @@ body{
 .top{
     //margin: 15px;
     margin-top:5%;
-   
+   .fa-book{
+    margin: 5px;
+   }
 }
 .top span select{
     border-style: none;
     font-weight: bold;
-    margin-left: 50px;
-    margin-top: 7px;
+    margin-left: 130px;
+    margin-top: 17px;
     
 }
 
@@ -50,7 +52,7 @@ body{
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    margin-left: 70%;
+    margin-left: 260px;
     margin-top: -25px;
   
     // .fa-moon{
@@ -118,10 +120,7 @@ body{
     border-radius: 50%;
   }
   
-  .fas {
-    font-size: 20px;
-    margin-right: 5px;
-  }
+  
 /////////////////////////////
 
 .fa-magnifying-glass, .fa-play{
@@ -134,13 +133,14 @@ body{
     margin-top: 30px;
       border-radius: 30px;
     background-color:var(--searchbar_color);
-
+    width: 400px;
     input {
         border: none;
         outline: none;
         background-color: var( --searchbar_color);
         color: var(--primary-fonts_color);
-        width: 85%;
+        width: 340px;
+       // background-color: #57118d;
         height: 40px;
         font-size: larger;
         font-weight: bold;
@@ -158,7 +158,7 @@ body{
    
 }
 .fa-play{
-    margin-left: 90%;
+    margin-left: 360px;
 }
 span{
     margin-left: 90%;
@@ -219,3 +219,29 @@ select{
     color: var(--primary-fonts_color);
 }
 
+.fa-moon{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+
+@media screen and (min-width:850px)
+{
+   body{
+    font-size: larger;
+   }
+    .container{
+      margin-left: 500px;
+    }
+   
+}  
+
+
+@media screen and (min-width:400px)
+{
+   
+    .container{
+      //margin-left: 500px;
+    }
+   
+}  
