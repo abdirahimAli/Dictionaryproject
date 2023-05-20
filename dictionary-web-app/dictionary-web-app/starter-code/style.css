@@ -3,6 +3,7 @@
   --primary-fonts_color: #050505;
   --fontfamily:sans-serif;
   --searchbar_color: #a5a6b7;
+  --primary-container_color:rgba(245, 245, 245, 0.973);
 }
 
 [switch-searchbarcolor=dark] {
@@ -24,16 +25,21 @@
 [mode-dark=dark] {
   --primary-color_background: #050505;
   --primary-fonts_color: #FFFFFF;
+  --primary-container_color: #2f2f2fc6;
 }
 
 body {
   font-family: var(--fontfamily);
   background-color: var(--primary-color_background);
   color: var(--primary-fonts_color);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 
 .top {
   margin-top: 5%;
+  margin-left: 10px;
 }
 .top .fa-book {
   margin: 5px;
@@ -121,9 +127,10 @@ input:checked + .slider::before {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  border-radius: 30px;
+  border-radius: 60px;
   background-color: var(--searchbar_color);
-  width: 400px;
+  width: 390px;
+  margin-left: 30px;
 }
 .searchbar input {
   border: none;
@@ -200,11 +207,17 @@ select {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 850px) {
-  body {
-    font-size: larger;
+.container {
+  background-color: var(--primary-container_color);
+  width: 450px;
+}
+
+@media screen and (max-width: 400px) {
+  .searchbar {
+    width: 320px;
+    margin-left: 30px;
   }
-  .container {
-    margin-left: 500px;
+  .searchbar input {
+    width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
